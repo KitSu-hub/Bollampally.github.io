@@ -1,0 +1,107 @@
+.projects-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideInUp 0.6s ease forwards;
+}
+
+.project-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 245, 255, 0.3);
+}
+
+.project-image {
+  height: 200px;
+  background: linear-gradient(45deg, #00f5ff, #ff006e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.project-img {
+  width: 500px;
+  height: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius : 8px;
+}
+
+
+
+.project-content {
+  padding: 2rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.project-description {
+  color: #b0b0b0;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-tag {
+  background: rgba(0, 245, 255, 0.2);
+  color: #00f5ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 245, 255, 0.3);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-project, .btn-project-secondary {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-project {
+  background: linear-gradient(45deg, #00f5ff, #ff006e);
+  color: white;
+}
+
+.btn-project-secondary {
+  background: transparent;
+  color: #00f5ff;
+  border: 2px solid #00f5ff;
+}
+
+.btn-project:hover, .btn-project-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 245, 255, 0.3);
+}
