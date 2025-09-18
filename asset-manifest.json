@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Bollampally.github.io/static/css/main.102b770d.css",
-    "main.js": "/Bollampally.github.io/static/js/main.f249c140.js",
-    "static/media/profile.png": "/Bollampally.github.io/static/media/profile.58f06630245b3207209a.png",
-    "index.html": "/Bollampally.github.io/index.html",
-    "main.102b770d.css.map": "/Bollampally.github.io/static/css/main.102b770d.css.map",
-    "main.f249c140.js.map": "/Bollampally.github.io/static/js/main.f249c140.js.map"
+    "main.css": "/Portfolio/static/css/main.102b770d.css",
+    "main.js": "/Portfolio/static/js/main.2deacc25.js",
+    "static/media/profile.png": "/Portfolio/static/media/profile.58f06630245b3207209a.png",
+    "index.html": "/Portfolio/index.html",
+    "main.102b770d.css.map": "/Portfolio/static/css/main.102b770d.css.map",
+    "main.2deacc25.js.map": "/Portfolio/static/js/main.2deacc25.js.map"
   },
   "entrypoints": [
     "static/css/main.102b770d.css",
-    "static/js/main.f249c140.js"
+    "static/js/main.2deacc25.js"
   ]
 }
