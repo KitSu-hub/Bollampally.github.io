@@ -11,7 +11,7 @@ import { useEffect, useRef, useState } from 'react';
 import './homepage.css';
 import profilePic from './profile.png';
 
-const FULL_DESCRIPTION = `  Data Engineer with a background in Data Science and Machine Learning. Experienced in building scalable data pipelines, optimizing infrastructure, and enabling data-driven insights. Skilled at bridging engineering and ML to deliver impactful, production-ready solutions.`;
+const FULL_DESCRIPTION = `  Recent Graduate with a Master of Science in Computer Science from the University of Texas at Arlington, passionate about uncovering insights through data and creating intelligent systems that drive innovation. With hands-on experience in machine learning, data analysis, and model deployment, I enjoy turning complex data into clear, actionable results. Always eager to learn, collaborate, and tackle challenging problems in AI and analytics.`;
 
 const Homepage = () => {
   const titleRef = useRef(null);
@@ -38,7 +38,7 @@ const Homepage = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = `${process.env.PUBLIC_URL}/Resume.pdf`;
     link.download = 'sai_Krishna_Reddy_Bollampally_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -61,7 +61,7 @@ const Homepage = () => {
                   </span>
                 </h1>
                 <p className="hero-subtitle">
-                  Data Engineer | Data Scientist | ML Enthusiast
+                  Data Scientist | Data Analyst |  ML Engineer
                 </p>
                 <p className="hero-description decrypting">
                   {decryptedText}
@@ -142,7 +142,7 @@ const Homepage = () => {
           <div className="tech-section">
             <h3 className="tech-title">Frequently Used Tools & Technologies</h3>
             <div className="tech-grid">
-              {['scikit-learn', 'Python', 'SQL', 'Spark', 'Kafka', 'dbt', 'Airflow', 'Power BI', 'Docker'].map((tech) => (
+              {['scikit-learn', 'Python', 'SQL', 'AWS', 'Azure', 'Pandas', 'Tableau', 'Power BI', 'Docker'].map((tech) => (
                 <span key={tech} className="tech-item">
                   {tech}
                 </span>

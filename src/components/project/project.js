@@ -3,7 +3,7 @@ import './project.css';
 
 const projects = [
   {
-    image: '/project/portfolio.jpg',
+    image: `${process.env.PUBLIC_URL}/project/portfolio.jpg`,
     title: "Portfolio Website",
     description: "A personal website to showcase my skills and projects.",
     tech: ["React", "CSS"],
@@ -11,7 +11,7 @@ const projects = [
     code: "",
   },
   {
-    image: '/project/ETL_Pipeline.png',
+    image: `${process.env.PUBLIC_URL}/project/ETL_Pipeline.png`,
     title: "ETL Pipeline with Airflow & Cloud Data Warehouse",
     description: "Built an automated ETL pipeline with Airflow to extract data from APIs, transform it in Python, and load it into snowflake. Enabled scheduled, reliable pipelines for analytics dashboards.",
     tech: ["Apache Airflow","Python", "SQL", "Snowflake", "AWS S3", "Tableau"],
@@ -19,7 +19,7 @@ const projects = [
     code: "",
   },
   {
-    image: '/project/Data_streaming.png',
+    image: `${process.env.PUBLIC_URL}/project/Data_streaming.png`,
     title: "Real-Time Data Streaming with Kafka",
     description: "A Real-time chat application where users can chat with each other. Developed a streaming pipeline using Kafka and Spark to process live event data and store results in PostgreSQL. Delivered real-time insights through dashboards in Tableau.",
     tech: ["Apache Kafka", "Apache Spark", "PostgreSQL", "Tableau","Docker"],
@@ -27,7 +27,7 @@ const projects = [
     code: "",
   },
   {
-    image: '/project/Data_Lakehouse.png',
+    image: `${process.env.PUBLIC_URL}/project/Data_Lakehouse.png`,
     title: "Data Lakehouse on AWS",
     description: "Designed a lakehouse architecture on AWS using S3, Glue, and Redshift. Used dbt for transformations to support both BI reporting and ML workloads.",
     tech: ["AWS S3", "dbt", "Redshift", "Airflow", "Power BI"],
@@ -35,7 +35,7 @@ const projects = [
     code: "",
   },
   {
-    image: "/project/End-to-End.png",
+    image: `${process.env.PUBLIC_URL}/project/End-to-End.png`,
     title: "End-to-End Data Platform for Analytics & ML",
     description: "Created a platform that ingests, processes, and stores e-commerce data for reporting and ML predictions. Automated pipelines with Airflow ensured fresh data for churn prediction models and dashboards.",
     tech: ["Airflow", "Spark", "Snowflake", "scikit-learn", "MLflow", "Docker", "Tableau"],
@@ -43,7 +43,7 @@ const projects = [
     code: "",
   },
   {
-    image: "/project/Data_Quality_Monitoring_System.png",
+    image: `${process.env.PUBLIC_URL}/project/Data_Quality_Monitoring_System.png`,
     title: "Data Quality & Monitoring System",
     description: "Implemented automated data validation with Great Expectations integrated into Airflow pipelines. Added Slack alerts for failures, improving trust and reliability in analytics.",
     tech: ["Airflow", "Redshift", "AWS S3", "Great Expectations", "Slack API"],
